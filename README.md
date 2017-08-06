@@ -1,6 +1,7 @@
 # whitespace
 whitespace
 ```
+var source = 'hello,this is w whitespace'
 function whitespaceEncode(str) {
     var j, result = '';
 
@@ -25,7 +26,6 @@ function whitespaceEncode(str) {
 
 function whitespaceDecode(str) {
     var result = '';
-
     str.replace(/.{7}/g, function (strByte) {
         var binStr = strByte.replace(/ /g, '0').replace(/	/g, '1');
         var charCode = parseInt(binStr, 2);
@@ -38,7 +38,7 @@ function whitespaceDecode(str) {
 var encodedSource = whitespaceEncode(source);
 var decodedSource = whitespaceDecode(encodedSource);
 
-console.log('SOURCE:', source);
-console.log('ENCODED:', encodedSource);
-console.log('DECODED:', decodedSource);
+alert('SOURCE:', source);
+alert('ENCODED:', encodedSource);
+alert('DECODED:', decodedSource);
 ```
