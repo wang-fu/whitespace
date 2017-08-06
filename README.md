@@ -31,14 +31,12 @@ function whitespaceDecode(str) {
         var charCode = parseInt(binStr, 2);
         result += String.fromCharCode(charCode);
     });
-
     return result;
 }
-
 var encodedSource = whitespaceEncode(source);
 var decodedSource = whitespaceDecode(encodedSource);
 
-alert('SOURCE:', source);
-alert('ENCODED:', encodedSource);
-alert('DECODED:', decodedSource);
+console.log('SOURCE:', source);
+console.log('ENCODED:', encodedSource);
+console.log('DECODED:', decodedSource);
 ```
