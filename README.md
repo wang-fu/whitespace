@@ -1,6 +1,6 @@
 # whitespace
 whitespace
-```
+```javascript
 var source = 'hello,this is w whitespace'
 function whitespaceEncode(str) {
     var j, result = '';
